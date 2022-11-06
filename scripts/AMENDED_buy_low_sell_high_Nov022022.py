@@ -26,7 +26,7 @@ from hummingbot.strategy.script_strategy_base import ScriptStrategyBase
 
 # PENDING: Change 'buyLowSellHigh' to 'buyLowSellHighEMEA' to differentiate this script from original version
 class buyLowSellHigh(ScriptStrategyBase):
-    long_profit_taking_spread = 0.30,  # [11/3/22]: Added long_TP parameter -> not sure if this will work w/o additional code
+#     long_profit_taking_spread = 0.30,  # [11/3/22]: Added long_TP parameter -> not sure if this will work w/o additional code
     markets = {"bybit_perpetual": {"ETH-USDT"}}
     #: pingpong is a variable to allow alternating between buy & sell signals
     pingpong = 0
@@ -59,8 +59,8 @@ class buyLowSellHigh(ScriptStrategyBase):
                 connector_name="bybit_perpetual",
                 trading_pair="ETH-USDT",
                 amount=Decimal(0.1),
-                order_type=OrderType.MARKET,
-                long_profit_taking_spread=0.30  # [11/3/22]: Adding my Long_TP parameter from above; not sure if will work w/o additional code
+                order_type=OrderType.MARKET
+#                 long_profit_taking_spread=0.30  # [11/3/22]: Adding my Long_TP parameter from above; not sure if will work w/o additional code
             )
             self.logger().info(f'{"0.1 ETH bought"}')
             self.pingpong = 1
@@ -71,8 +71,8 @@ class buyLowSellHigh(ScriptStrategyBase):
                 connector_name="bybit_perpetual",
                 trading_pair="ETH-USDT",
                 amount=Decimal(0.2),
-                order_type=OrderType.MARKET,
-                long_profit_taking_spread=0.30  # [11/3/22]: Adding my Long_TP parameter from above; not sure if will work w/o additional code
+                order_type=OrderType.MARKET
+#                 long_profit_taking_spread=0.30  # [11/3/22]: Adding my Long_TP parameter from above; not sure if will work w/o additional code
             )
             self.logger().info(f'{"0.2 ETH bought"}')
             self.pingpong = 1
