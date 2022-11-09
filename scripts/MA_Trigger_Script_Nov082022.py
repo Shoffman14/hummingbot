@@ -21,6 +21,8 @@ class MATriggers(ScriptStrategyBase):
     markets = {
         "bybit_perpetual": {"ETH-USDT"}
     }
+    #: pingpong is a variable to allow alternating between buy & sell signals
+    pingpong = 0
     de_fast_ma = deque([], maxlen=5)
     de_slow_ma = deque([], maxlen=20)
 
@@ -34,7 +36,7 @@ class MATriggers(ScriptStrategyBase):
         slow_ma = mean(self.de_slow_ma)
 
         #: logic for golden cross
-        if (fast_ma > slow_ma):
+        if (fast_ma > slow_ma) & (self.pingpong == 0):
             self.buy(
                 connector_name="bybit_perpetual",
                 trading_pair="ETH-USDT",
@@ -44,9 +46,10 @@ class MATriggers(ScriptStrategyBase):
                 position_action=PositionAction.OPEN
             )
             self.logger().info(f'{"0.01 ETH bought"}')
+            self.pingpong = 1
 
         #: logic for death cross
-        elif (slow_ma > fast_ma):
+        elif (slow_ma > fast_ma) & (self.pingpong == 1):
             self.sell(
                 connector_name="bybit_perpetual",
                 trading_pair="ETH-USDT",
@@ -56,5 +59,6 @@ class MATriggers(ScriptStrategyBase):
                 position_action=PositionAction.OPEN
             )
             self.logger().info(f'{"0.01 ETH sold"}')
+            self.pingpong = 0
         else:
             self.logger().info(f'{"wait for a signal to be generated"}')
