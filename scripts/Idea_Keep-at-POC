@@ -1,0 +1,10 @@
+The basics of this script idea: 
+-> Note: a lot/most of the configs here can be tracked/measured over time to make more precise/real-time 
+-> Keep avg_entry_price at the session or 1d POC 
+-> Start at a certain time, like based on where the last 30min TPO/regular candle close for session or 1d time period IB_Range 
+-> So, keep my avg_entry_prce at that POC and every 30min just: 1) calculate whether I need to buy or sell more, and by how much ('qty'), 
+    in order to make my avg_entry_price = POC 
+-> While my avg_entry_price is that this key_price_level, always be quoting limit_close_bid-or-offer_orders to: 1) reduce my inventory, and 
+    2) take profit on my position (constantly) 
+    -> for example: quote at 0.20% away from the avg_entry_price (=POC) for tp_spreads 
+-> Finally -> just keep perfecting/refinning it; like wine 
