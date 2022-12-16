@@ -1,0 +1,5 @@
+Script only trades at certain price levels, eg: only in VA area of a TPO. 
+Tight TPs, like 20% on both sides 
+Could be helpful to "anchor" one side at a key_price_level, like session/1d POC 
+  -> Meaning, the bot would maintain that key_price_level so that it's = to my positiono's avg_entry_price 
+  -> Another approach, anchor your take_profit orders to a key_price_level 
