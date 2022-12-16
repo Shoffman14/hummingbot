@@ -8,3 +8,6 @@ The basics of this script idea:
     2) take profit on my position (constantly) 
     -> for example: quote at 0.20% away from the avg_entry_price (=POC) for tp_spreads 
 -> Finally -> just keep perfecting/refinning it; like wine 
+
+Complimentary ideas: 
+-> Run scripts simulataneously that rebalance at different time intervals: every 30min, 4hr, 1d, etc 
