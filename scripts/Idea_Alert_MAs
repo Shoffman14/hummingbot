@@ -1,0 +1,2 @@
+Create a long_alert when all MAs, that I've been using in TradingView (TV), are "above" the 1000_MA on 1min chart 
+If I write this in Hummingbot using ticks, so 1_tick = 1_second -> then translate into seconds (60sec * #_minutes) 
