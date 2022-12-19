@@ -2,3 +2,5 @@ At start of a new UTC day, enter into a long or short position with a target_TP_
 I did a quick visible search on the 1d TPO chart and a majority of the time the market will eventually auction back to the previous day's, ie: the most 
   recently completed day's POC 
 I haven't analyzed this for session TPO but I assume this could be a good opportunity / script_strategy for those profiles as well. 
+I can also trade based on expected # of TPO boxes that I expect / predict to form at different price levels. Key prices like poc, etc but also 
+  any price levels that have higher / above-the-average volume 
