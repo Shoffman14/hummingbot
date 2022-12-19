@@ -1,0 +1,4 @@
+At start of a new UTC day, enter into a long or short position with a target_TP_price of the previous 1d's POC 
+I did a quick visible search on the 1d TPO chart and a majority of the time the market will eventually auction back to the previous day's, ie: the most 
+  recently completed day's POC 
+I haven't analyzed this for session TPO but I assume this could be a good opportunity / script_strategy for those profiles as well. 
