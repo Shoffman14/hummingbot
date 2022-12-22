@@ -3,3 +3,6 @@
 -An improvement/refinement to this idea would be to also track the rolling_average (or similar function) of the spread between _vah and _val (eg: session_vah - session_val) 
 -> I can write this in hummingbot script, having it only output print of a compute function 
 -Finally, create and/or have a bot base 'decisions' (like tp_spread & sl_spread) based on this calculation
+
+-Another data_stream_idea -> display my tp_spread regardless if my position is in-the-money or not. 
+->That will help me track/ensure that my tp_spread_configs align to key_tpo_price_levels (like vah & val) 
