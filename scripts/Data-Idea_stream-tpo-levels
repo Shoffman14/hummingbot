@@ -1,0 +1,5 @@
+-Auction_I of Asia Session (UTC 12/22/22) -> started a long position and keeping its avg_entry_price at/near session_poc (also currently the 1d_poc. long_tp is 0.20% 
+-After I wrote this out and thought about it, a better way to look at this long would be too keep avg_entry_price as close to session_val and/or 1d_val, with the goal being to capture at least a 0.20% profit (long_tp_spread) when market auctions back towards the equivalent timeframe’s _val (ie: session or 1d) 
+-An improvement/refinement to this idea would be to also track the rolling_average (or similar function) of the spread between _vah and _val (eg: session_vah - session_val) 
+-> I can write this in hummingbot script, having it only output print of a compute function 
+-Finally, create and/or have a bot base 'decisions' (like tp_spread & sl_spread) based on this calculation
