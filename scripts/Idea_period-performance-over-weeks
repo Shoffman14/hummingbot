@@ -1,0 +1,6 @@
+As the file name suggests, this script/research code would categorize different timeframes, calculate performance (and/or other tradeable metrics), 
+  and compare performance/metrics to the same time period in the past. 
+For example: % increase or decrease for the 4hr time interval starting UTC Tuesday 00:01 (each week) vs % increase or decrease of this same time 
+  interval the previous week (and vs previous week of that, of that, of that, etc) 
+Goal: Among many things this may help me identify common patters occurring at/around the same time intervals each week. This will also allow me to 
+  better understand how long this alpha is profitable. 
