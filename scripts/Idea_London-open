@@ -1,0 +1,4 @@
+Based on quick visual research of recent TPO Sessions 30min (tick: 10) data, write a script for entering a long + short trade 
+  at London open with the goal of capitalizing on small moves (like tp_spreads of 0.10% 0- 0.20%) that occur in first few 
+  sessions of London trading. 
+Then, look for other session based / market open based opportunities and code the same. 
